@@ -21,7 +21,7 @@ Hint: You can use a sliding window approach.
 '''
 
 '''
-Solution: Two-pointers & Set
+Solution 1: Two-pointers & Set
 Time Complexity: O(N)
 In the sliding window, each character is checked at most twice (once when added, once when removed), 
 hence O(N) + O(N) = O(N)
@@ -44,7 +44,7 @@ def lengthOfLongestSubstring(s):
     return maxLength
 
 '''
-Solution: Brute Force with Set
+Solution 2: Brute Force with Set
 Time Complexity: O(N2)
 In the brute force, each character is checked multiple times in a nested for loop, hence O(N2)
 Space Complexity: O(n) (storing substrings)

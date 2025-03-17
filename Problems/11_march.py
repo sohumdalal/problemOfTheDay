@@ -22,4 +22,5 @@ The list length is n, meaning one number is missing.
 
 Bonus Challenge:
 Solve this in O(n) time and O(1) space (not counting input storage).
+
 '''

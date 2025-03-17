@@ -21,5 +21,4 @@ The input string will contain only English letters, digits, symbols, and spaces.
 The time complexity should be O(n), where n is the length of the string.
 Hint: You can use a sliding window approach.
 
-
 '''

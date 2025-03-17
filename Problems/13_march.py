@@ -18,5 +18,4 @@ Do not use extra space for another array. Try to do this in-place.
 You may assume that the input array has at least one element.
 Hint: Think about how you can swap the zeros with the first non-zero elements and keep a pointer for the position where the next non-zero element should go.
 
-
 '''

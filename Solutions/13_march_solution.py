@@ -1,0 +1,53 @@
+'''
+Solution Of The Day - 3/13/2025
+
+Move Zeros to the End
+
+Given an array of integers, write a function that moves all zeros in the array to the end without changing the order of non-zero elements.
+
+Example:
+Input: [0, 1, 0, 3, 12]
+Output: [1, 3, 12, 0, 0]
+
+Input: [0, 0, 1]
+Output: [1, 0, 0]
+
+Constraints:
+Do this in O(n) time complexity.
+Do not use extra space for another array. Try to do this in-place.
+You may assume that the input array has at least one element.
+Hint: Think about how you can swap the zeros with the first non-zero elements and keep a pointer for the position where the next non-zero element should go.
+'''
+
+# Solution 1: Pointer
+# Time Complexity: O(N)
+# Space Complexity: O(1)
+
+def moveZerosToEnd(nums):
+    nonZeroIndex = 0 
+    for i in range(len(nums)):
+        if nums[i] != 0:                         
+            nums[nonZeroIndex], nums[i] = nums[i], nums[nonZeroIndex]
+            nonZeroIndex += 1     
+    return nums
+
+
+# Solution 2: Brute Force
+# Time Complexity: O(N^2)
+# Space Complexity: O(1)
+
+def moveZerosToEnd(nums):
+    n = len(nums)
+    
+    for i in range(n):
+        if nums[i] == 0:
+            for j in range(i+1, n):
+                nums[j-1] = nums[j]
+            nums[n-1] = 0
+
+    return nums
+
+
+# Example test cases
+print(moveZerosToEnd([0, 1, 0, 3, 12]))  # Output: [1, 3, 12, 0, 0]
+print(moveZerosToEnd([0, 0, 1]))  # Output: [1, 0, 0]

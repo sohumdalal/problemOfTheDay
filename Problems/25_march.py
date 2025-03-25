@@ -21,8 +21,8 @@ Class: DoublyLinkedList – please include and test the following methods:
 Sorting a Doubly Linked List (3/25)
 
 Implement a sort() method that sorts the doubly linked list in ascending order.
-Try to do this in-place without creating a new list.
-Hint: You can use Insertion Sort since it works well with linked lists.
+---- Try to do this in-place without creating a new list.
+--- Hint: You can use Insertion Sort since it works well with linked lists.
 
 '''
 

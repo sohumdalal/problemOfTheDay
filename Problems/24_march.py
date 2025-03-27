@@ -20,4 +20,3 @@ Class: DoublyLinkedList – please include and test the following methods:
 
 '''
 
-

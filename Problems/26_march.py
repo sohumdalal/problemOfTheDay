@@ -24,3 +24,35 @@ Hint:
 ---- Use two pointers to traverse both lists and adjust the .next pointers to achieve the zipper effect.
 
 '''
+
+#attempt 1
+class Node:
+    def __init__ (self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+
+    def append(self, data):
+        if self.head == None:
+            self.head = Node(data)
+            self.tail = self.head
+            return
+        self.tail.next = Node(data)
+        self.tail = self.tail.next 
+
+    def display(self):
+        current = self.head
+        while current:
+            print(current.data)
+            current = current.next
+        
+
+myLL = LinkedList()
+numList = [1,2,3,4,5]
+for val in numList:
+    myLL.append(val)
+myLL.display()

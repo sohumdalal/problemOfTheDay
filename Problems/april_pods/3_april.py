@@ -24,3 +24,9 @@ If both nodes are greater than the root, search right.
 Otherwise, the current node is the LCA.
 
 '''
+
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
